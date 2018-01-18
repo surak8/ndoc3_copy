@@ -1,0 +1,14 @@
+Microsoft HTML Help Compiler 4.74.8702
+
+Compiling c:\Users\RTCOUSENS\colt\projects\DL\SourceForge\ndoc3-code-371-trunk\ndoc3-code-371-trunk\src\UsersGuide\NDoc3UsersGuide.chm
+
+
+Compile time: 0 minutes, 0 seconds
+55	Topics
+389	Local links
+31	Internet links
+12	Graphics
+
+
+Created c:\Users\RTCOUSENS\colt\projects\DL\SourceForge\ndoc3-code-371-trunk\ndoc3-code-371-trunk\src\UsersGuide\NDoc3UsersGuide.chm, 410,055 bytes
+Compression decreased file by 309,506 bytes.

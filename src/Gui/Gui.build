@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project name="NDoc3Gui" default="compile">
+	<target name="compile">
+		<csc target="winexe" output="${current.bin.dir}/${project::get-name()}.exe" debug="${current.build.debug}" optimize="${current.build.optimize}" unsafe="false" win32icon="NDoc.ico" checked="false" define="${current.build.defines}">
+      <nowarn>
+          <warning number="${current.build.nowarn}" />
+      </nowarn>
+			<sources>
+				<include name="**/*.cs" />
+				<include name="../CommonAssemblyInfo.cs" />
+			</sources>
+			<references>
+				<include name="System.dll" />
+				<include name="System.Data.dll" />
+				<include name="System.Design.dll" />
+				<include name="System.Drawing.dll" />
+				<include name="System.Windows.Forms.dll" />
+				<include name="System.Xml.dll" />
+				<include name="${current.bin.dir}/NDoc3.Core.dll" />
+				<include name="${current.bin.dir}/NDoc3.VisualStudio.dll" />
+			</references>
+			<resources>
+				<include name="**/*.resx" />
+			</resources>
+			<resources prefix="NDoc3.Gui" dynamicprefix="true">
+				<include name="About.rtf" />
+				<include name="graphics/*.ico" />
+			</resources>
+		</csc>
+		<copy file="NDoc3Gui.exe.manifest" todir="${current.bin.dir}" />
+	</target>
+</project>
